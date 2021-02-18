@@ -1,0 +1,13 @@
+body {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+
+#app {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}

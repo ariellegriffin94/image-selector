@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Selector</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+      onload="window.$ = window.jQuery = module.exports;"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <br />
+      <br />
+      <h1><span id="title">Image Selector</span></h1>
+      <br />
+      <br />
+
+      <div class="dropdown">
+        <select id="projectChoose"></select>
+      </div>
+      <br />
+      <div class="set-container">
+        <button type="button" class="hide" id="setBut">Set Project</button>
+      </div>
+      <div class="row">
+        <div class="col-12 name-container hide">
+          <input
+            class="form-input"
+            type="text"
+            id="projectName"
+            name="projectname"
+            placeholder="Project Name"
+            required
+          />
+          <br />
+          <button type="button" id="addBut">Add</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 width-container hide">
+          <p class="hide alert-text">
+            Make sure all desired images have been placed in the project folder!
+          </p>
+          <input
+            class="form-input"
+            type="number"
+            step="0.1"
+            id="imageWidth"
+            name="imagewidth"
+            placeholder="Image Width"
+            required
+          />
+          px
+          <br />
+          <button id="runBut" type="button">Run</button>
+          <button id="allSet" class="hide" type="button">
+            All Set! Create File
+          </button>
+        </div>
+      </div>
+
+      <br />
+      <div class="images-div"></div>
+    </div>
+  </body>
+</html>
